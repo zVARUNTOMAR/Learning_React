@@ -1,6 +1,10 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import Card from "./components/UI/Card";
+import NewExpense from "./components/NewExpense/NewExpense";
+// import ExpenseFilter from "./components/Expenses/ExpensesFilter";
+
+// import { useState } from "react";
 function App() {
   const expenses = [
     {
@@ -29,9 +33,18 @@ function App() {
     },
   ];
 
+  // const addExpenseData = (expense) => {
+  //   let updatedExpenses = [...expenses, expense];
+  //   console.log("updated:", updatedExpenses);
+  //   setExpenses(updatedExpenses);
+  //   // expenses.push(expense);
+  //   console.log(expenses);
+  // };
+
   return (
     <Card className="App">
       <h5 className="title">Let's get started</h5>
+      <NewExpense />
       <Expenses expenses={expenses} />
     </Card>
   );
