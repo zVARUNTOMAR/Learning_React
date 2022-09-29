@@ -38,3 +38,15 @@ button {
 button:hover {
   background-color: #6c40da;
 }
+
+.new-expense__actions__noform {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-expense__actions__noform button {
+  width: 250px;
+  padding: 20px;
+}
